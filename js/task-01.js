@@ -2,6 +2,10 @@ const listWithId = document.querySelector('#categories');
 const menuItemByTagName = listWithId.querySelectorAll(".item");
 console.log("Number of categories: " + menuItemByTagName.length);
 
-
-const list = document.querySelector('ul.categories');
-console.log(list);
+const totalItems = document.querySelectorAll('.item');
+totalItems.forEach((item) => {
+    const titleItem = item.firstElementChild.textContent;
+    const totalPositionOfItem = item.lastElementChild.children.length;
+    console.log("Category: " + titleItem);
+    console.log("Elements: " + totalPositionOfItem);
+});
