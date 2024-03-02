@@ -20,14 +20,22 @@ function destroyBoxes() {
   boxesContainer.innerHTML = '';
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const createBtn = document.querySelector('[data-create]');
-  const destroyBtn = document.querySelector('[data-destroy]');
+// document.addEventListener('DOMContentLoaded', () => {
+//   const createBtn = document.querySelector('[data-create]');
+//   const destroyBtn = document.querySelector('[data-destroy]');
   
-  createBtn.addEventListener('click', () => {
-    const amount = parseInt(document.querySelector('input').value);
-    createBoxes(amount);
-  });
+//   createBtn.addEventListener('click', () => {
+//     const amount = parseInt(document.querySelector('input').value);
+//     createBoxes(amount);
+//   });
   
-  destroyBtn.addEventListener('click', destroyBoxes);
+//   destroyBtn.addEventListener('click', destroyBoxes);
+// });
+
+document.querySelector("[data-create"]).addEventListener("click", () =>{
+  const amount = document.querySelector("input").value;
+});
+
+document.querySelector("[data-destroy]").addEventListener("click", () => {
+  destroyBoxes();
 });
