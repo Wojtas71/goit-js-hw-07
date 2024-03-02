@@ -32,7 +32,7 @@ function destroyBoxes() {
 //   destroyBtn.addEventListener('click', destroyBoxes);
 // });
 
-document.querySelector("[data-create"]).addEventListener("click", () =>{
+document.querySelector("[data-create]").addEventListener("click", () =>{
   const amount = document.querySelector("input").value;
 });
 
